@@ -19,71 +19,113 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="01 - Catalogos.sql">
+        <FileNode Name="01 - 1 - Sucursales.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
           <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
-          <FullPath>01 - Catalogos.sql</FullPath>
+          <FullPath>01 - 1 - Sucursales.sql</FullPath>
         </FileNode>
-        <FileNode Name="02 - Empleados.sql">
+        <FileNode Name="01 - 2 - Puestos.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
           <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
-          <FullPath>02 - Empleados.sql</FullPath>
+          <FullPath>01 - 2 - Puestos.sql</FullPath>
         </FileNode>
-        <FileNode Name="03 - MovAfiliatorios.sql">
+        <FileNode Name="01 - 3 - Departamentos.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
           <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
-          <FullPath>03 - MovAfiliatorios.sql</FullPath>
+          <FullPath>01 - 3 - Departamentos.sql</FullPath>
         </FileNode>
-        <FileNode Name="04 - Historiales.sql">
+        <FileNode Name="01 - 4 - Centros de costos.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
           <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
-          <FullPath>04 - Historiales.sql</FullPath>
+          <FullPath>01 - 4 - Centros de costos.sql</FullPath>
         </FileNode>
-        <FileNode Name="05 - EjecutarFechaHistoriales.sql">
+        <FileNode Name="01 - 5 - Prestaciones.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
           <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
-          <FullPath>05 - EjecutarFechaHistoriales.sql</FullPath>
+          <FullPath>01 - 5 - Prestaciones.sql</FullPath>
         </FileNode>
-        <FileNode Name="06 - Direcciones.sql">
+        <FileNode Name="02 - EjecutarFechaHistoriales.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
           <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
-          <FullPath>06 - Direcciones.sql</FullPath>
+          <FullPath>02 - EjecutarFechaHistoriales.sql</FullPath>
         </FileNode>
-        <FileNode Name="07 - Prestamos.sql">
+        <FileNode Name="03 - Tipos de nomina.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
           <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
-          <FullPath>07 - Prestamos.sql</FullPath>
+          <FullPath>03 - Tipos de nomina.sql</FullPath>
         </FileNode>
-        <FileNode Name="08 - Infonavit.sql">
+        <FileNode Name="04 - Registros Patronales.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
           <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
-          <FullPath>08 - Infonavit.sql</FullPath>
+          <FullPath>04 - Registros Patronales.sql</FullPath>
         </FileNode>
-        <FileNode Name="09 - Familiares.sql">
+        <FileNode Name="05 - 1 - Empleados.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
           <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
-          <FullPath>09 - Familiares.sql</FullPath>
+          <FullPath>05 - 1 - Empleados.sql</FullPath>
         </FileNode>
-        <FileNode Name="10 - DatosExtras.sql">
+        <FileNode Name="05 - 2 - Asignar Tipos de Nomina.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
           <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
-          <FullPath>10 - DatosExtras.sql</FullPath>
+          <FullPath>05 - 2 - Asignar Tipos de Nomina.sql</FullPath>
         </FileNode>
-        <FileNode Name="11 - Conceptos.sql">
+        <FileNode Name="06 - MovAfiliatorios.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
           <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
-          <FullPath>11 - Conceptos.sql</FullPath>
+          <FullPath>06 - MovAfiliatorios.sql</FullPath>
+        </FileNode>
+        <FileNode Name="08 - Historiales.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
+          <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
+          <FullPath>08 - Historiales.sql</FullPath>
+        </FileNode>
+        <FileNode Name="09 - Direcciones.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
+          <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
+          <FullPath>09 - Direcciones.sql</FullPath>
+        </FileNode>
+        <FileNode Name="10 - Familiares.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
+          <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
+          <FullPath>10 - Familiares.sql</FullPath>
+        </FileNode>
+        <FileNode Name="11 - DatosExtras.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
+          <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
+          <FullPath>11 - DatosExtras.sql</FullPath>
+        </FileNode>
+        <FileNode Name="12 - Prestamos.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
+          <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
+          <FullPath>12 - Prestamos.sql</FullPath>
+        </FileNode>
+        <FileNode Name="13 - Infonavit.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
+          <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
+          <FullPath>13 - Infonavit.sql</FullPath>
+        </FileNode>
+        <FileNode Name="14 - Conceptos.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
+          <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
+          <FullPath>14 - Conceptos.sql</FullPath>
         </FileNode>
         <FileNode Name="Usuarios.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>

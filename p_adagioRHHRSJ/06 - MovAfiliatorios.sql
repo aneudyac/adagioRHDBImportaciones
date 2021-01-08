@@ -6,7 +6,7 @@
 --delete IMSS.tblMovAfiliatorios
 --DBCC CHECKIDENT ('IMSS.tblMovAfiliatorios', RESEED, 0);
 
-	insert p_adagioRHHRSJ.IMSS.tblMovAfiliatorios(
+	insert IMSS.tblMovAfiliatorios(
 		Fecha
 		,IDEmpleado
 		,IDTipoMovimiento
@@ -34,8 +34,21 @@
 		,1 as IDRegPatronal
 		,0 RespetarAntiguedad
 	from TRABMOVI tm
-		join p_adagioRHHRSJ.RH.tblEmpleados e on e.ClaveEmpleado = tm.CLAVE_TRABAJADOR
-		join p_adagioRHHRSJ.IMSS.tblCatTipoMovimientos ctm on ctm.Codigo = tm.MOV_TIPO
-		
+		join RH.tblEmpleados e on e.ClaveEmpleado = tm.CLAVE_TRABAJADOR
+		join IMSS.tblCatTipoMovimientos ctm on ctm.Codigo = tm.MOV_TIPO
+	order by e.IDEmpleado	
 
 		-- 61,735
+
+	exec RH.spSincronizarEmpleadosMaster
+
+
+
+
+		
+--SELECT *
+--INTO bk.IMSSTblMovAfiliatorios_MOVCMS
+--FROM delete IMSS.tblMovAfiliatorios
+--WHERE IDMovAfiliatorio >= 63332
+--group by IDEmpleado
+--order by IDMovAfiliatorio desc

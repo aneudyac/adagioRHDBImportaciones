@@ -26,11 +26,11 @@
 
 
 
-insert p_adagioRHHRSJ.RH.tblPuestoEmpleado
+insert RH.tblPuestoEmpleado
 select e.IDEmpleado,cd.IDPuesto,cast(t.FECHA_I as date) as FechaIni, cast(t.FECHA_F as date) as FechaFin
 from trahispu t
-	left join p_adagioRHHRSJ.RH.tblEmpleados e on e.ClaveEmpleado = t.CLAVE_TRABAJADOR 
-	left join p_adagioRHHRSJ.RH.tblcatPuestos cd on cd.Codigo = t.CLAVE_PUESTO 
+	left join RH.tblEmpleados e on e.ClaveEmpleado = t.CLAVE_TRABAJADOR 
+	left join RH.tblcatPuestos cd on cd.Codigo = t.CLAVE_PUESTO 
 
 
 
@@ -47,17 +47,17 @@ from trahispu t
 */
 
 --select * from sucursal
---select * from p_adagioRHHRSJ.RH.tblcatSucursales
+--select * from RH.tblcatSucursales
 
---select * from p_adagioRHHRSJ.RH.tblSucursalEmpleado
+--select * from RH.tblSucursalEmpleado
 
 
 
---insert p_adagioRHHRSJ.RH.tblSucursalEmpleado
---select e.IDEmpleado,cd.IDSucursal,cast(t.FECHA_I as date) as FechaIni, cast(t.FECHA_F as date) as FechaFin
---from trahissu t
---	left join p_adagioRHHRSJ.RH.tblEmpleados e on e.ClaveEmpleado = t.CLAVE_TRABAJADOR 
---	left join p_adagioRHHRSJ.RH.tblcatSucursales cd on cd.Codigo = t.CLAVE_SUCURSAL 
+insert RH.tblSucursalEmpleado
+select e.IDEmpleado,cd.IDSucursal,cast(t.FECHA_I as date) as FechaIni, cast(t.FECHA_F as date) as FechaFin
+from trahissu t
+	left join RH.tblEmpleados e on e.ClaveEmpleado = t.CLAVE_TRABAJADOR 
+	left join RH.tblcatSucursales cd on cd.Codigo = t.CLAVE_SUCURSAL 
 
 
 
@@ -72,14 +72,18 @@ from trahispu t
 */
 
 --select * from departam
---select * from p_adagioRHHRSJ.RH.tblCatDepartamentos
+--select * from RH.tblCatDepartamentos
 
---select * from p_adagioRHHRSJ.RH.tblDepartamentoEmpleado
+--select * from RH.tblDepartamentoEmpleado
 
 
---insert p_adagioRHHRSJ.RH.tblDepartamentoEmpleado
---select e.IDEmpleado,cd.IDDepartamento,cast(t.FECHA_I as date) as FechaIni, cast(t.FECHA_F as date) as FechaFin
---from trahisde t
---	left join p_adagioRHHRSJ.RH.tblEmpleados e on e.ClaveEmpleado = t.CLAVE_TRABAJADOR 
---	left join p_adagioRHHRSJ.RH.tblCatDepartamentos cd on cd.Codigo = t.CLAVE_DEPARTAMENTO 
+insert RH.tblDepartamentoEmpleado
+select e.IDEmpleado,cd.IDDepartamento,cast(t.FECHA_I as date) as FechaIni, cast(t.FECHA_F as date) as FechaFin
+from trahisde t
+	left join RH.tblEmpleados e on e.ClaveEmpleado = t.CLAVE_TRABAJADOR 
+	left join RH.tblCatDepartamentos cd on cd.Codigo = t.CLAVE_DEPARTAMENTO 
 
+
+
+
+	exec RH.spSincronizarEmpleadosMaster
