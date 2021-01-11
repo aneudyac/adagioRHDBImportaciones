@@ -4,12 +4,12 @@
 	select e.IDEmpleado, t.Calle, t.Numero,m.IDMunicipio,t.Municipio,CO.IDColonia,t.Colonia,L.IDLocalidad, t.Poblacion,s.IDEstado, t.Estado, e.FechaIngreso,'9999-12-31' as FechaFin,c.IDCodigoPostal,t.CP, ROW_NUMBER()over(partition by e.IDEmpleado order by e.ClaveEmpleado) as RN
  	INTO #tempDir
 	from trabajad t
-		join p_adagioRHHRSJ.RH.tblEmpleadosMaster e			with (nolock) on t.CLAVE_TRABAJADOR = e.ClaveEmpleado
-		LEFT JOIN p_adagioRHHRSJ.SAT.tblCatEstados S			with (nolock) ON S.NombreEstado	= t.ESTADO
-		LEFT JOIN p_adagioRHHRSJ.SAT.tblCatMunicipios M		with (nolock) ON M.Descripcion  = t.Municipio and m.IDEstado = s.IDEstado
-		LEFT JOIN p_adagioRHHRSJ.SAT.tblCatLocalidades L		with (nolock) ON L.Descripcion = t.POBLACION
-		LEFT JOIN p_adagioRHHRSJ.SAT.tblCatCodigosPostales C	with (nolock) ON C.CodigoPostal = t.CP
-		LEFT JOIN p_adagioRHHRSJ.SAT.tblCatColonias CO			with (nolock) ON CO.NombreAsentamiento = t.COLONIA AND C.IDCodigoPostal = CO.IDCodigoPostal
+		join RH.tblEmpleadosMaster e			with (nolock) on t.CLAVE_TRABAJADOR = e.ClaveEmpleado
+		LEFT JOIN SAT.tblCatEstados S			with (nolock) ON S.NombreEstado	= t.ESTADO
+		LEFT JOIN SAT.tblCatMunicipios M		with (nolock) ON M.Descripcion  = t.Municipio and m.IDEstado = s.IDEstado
+		LEFT JOIN SAT.tblCatLocalidades L		with (nolock) ON L.Descripcion = t.POBLACION
+		LEFT JOIN SAT.tblCatCodigosPostales C	with (nolock) ON C.CodigoPostal = t.CP
+		LEFT JOIN SAT.tblCatColonias CO			with (nolock) ON CO.NombreAsentamiento = t.COLONIA AND C.IDCodigoPostal = CO.IDCodigoPostal
 	order by e.IDEmpleado
 
 	delete
@@ -19,7 +19,7 @@
 
 	BEGIN TRY
 		BEGIN TRAN TransaccionDir
-			MERGE  p_adagioRHHRSJ.RH.tblDireccionEmpleado AS TARGET
+			MERGE RH.tblDireccionEmpleado AS TARGET
 			USING #tempDir as SOURCE
 			on TARGET.IDEmpleado = SOURCE.IDEmpleado
 			WHEN MATCHED THEN

@@ -5,7 +5,7 @@
 	--FROM TRAPREEM
 
 	--select *
-	--from p_adagioRHHRSJ.Nomina.tblCatTiposPrestamo
+	--from Nomina.tblCatTiposPrestamo
 	if object_id('tempdb..#temporal') is not null DROP TABLE #temporal;
 
 	SELECT 
@@ -48,7 +48,7 @@
 		ROW_NUMBER() OVER (PARTITION BY E.IDEMPLEADO ORDER BY prestamosRhflex.fecha DESC ) AS ORDEN
 	INTO #temporal
 	FROM TRAPREEM prestamosRhflex
-		INNER JOIN p_adagioRHHRSJ.RH.tblEmpleados E ON prestamosRhflex.CLAVE_TRABAJADOR = e.ClaveEmpleado
+		INNER JOIN RH.tblEmpleados E ON prestamosRhflex.CLAVE_TRABAJADOR = e.ClaveEmpleado
 
 	UPDATE #temporal set CODIGO = CODIGO + '-' + cast(ORDEN as varchar)
 
@@ -58,7 +58,7 @@
 	--order by Importe desc
 	--where FECHAINICIO is null
 	--return 
-	INSERT INTO p_adagioRHHRSJ.[Nomina].[tblPrestamos]
+	INSERT INTO [Nomina].[tblPrestamos]
 	(
 	 Codigo
 	,IDEmpleado
@@ -85,7 +85,7 @@
 	 FROM #temporal
 	 where tipoPres IS NOT NULL and FECHAINICIO is not null
 
-	 insert into  p_adagioRHHRSJ.[Nomina].[tblPrestamosDetalles]
+	 insert into  [Nomina].[tblPrestamosDetalles]
 	 SELECT P.IDPrestamo, NULL AS PERIODO, ( MONTOPRESTAMO - ( CUOTAS * CantidadCuotas ) ) AS MONTO, 
 		p.FechaInicioPago as fecha, 'Admin' As Receptor , 1 as idusr FROM p_adagioRHHRSJ.[Nomina].[tblPrestamos] P
 

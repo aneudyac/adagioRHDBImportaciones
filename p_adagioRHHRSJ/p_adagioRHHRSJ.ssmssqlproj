@@ -91,11 +91,11 @@
           <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
           <FullPath>08 - Historiales.sql</FullPath>
         </FileNode>
-        <FileNode Name="09 - Direcciones.sql">
+        <FileNode Name="10 - Direcciones.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
           <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
-          <FullPath>09 - Direcciones.sql</FullPath>
+          <FullPath>10 - Direcciones.sql</FullPath>
         </FileNode>
         <FileNode Name="10 - Familiares.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
@@ -126,6 +126,12 @@
           <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
           <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
           <FullPath>14 - Conceptos.sql</FullPath>
+        </FileNode>
+        <FileNode Name="15 - Importacion de tablas de impuestos.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>52.183.31.103</AssociatedConnSrvName>
+          <AssociatedConnUserName>adagiosa</AssociatedConnUserName>
+          <FullPath>15 - Importacion de tablas de impuestos.sql</FullPath>
         </FileNode>
         <FileNode Name="Usuarios.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:52.183.31.103:False:adagiosa</AssociatedConnectionMoniker>
